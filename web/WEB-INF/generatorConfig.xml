@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="context1">
+        <jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/employees?useUnicode=true&amp;characterEncoding=utf-8" driverClass="com.mysql.jdbc.Driver" password="483316" userId="root" />
+                                               <!-- 修改目录地址  -->                          <!--修改物理地址-->
+        <javaModelGenerator targetPackage="com.cqupt.pojo" targetProject="D:\\sx\\boss\\src" />
+        <sqlMapGenerator targetPackage="com.cqupt.mapping" targetProject="D:\\sx\\boss\\src" />
+        <javaClientGenerator targetPackage="com.cqupt.dao" targetProject="D:\\sx\\boss\\src" type="XMLMAPPER" />
+
+                <!--链接表名-->
+        <table tableName="tbuser">
+                            <!--主键-->
+            <generatedKey column="userid" sqlStatement="Mysql" identity="true"/>
+        </table>
+<!--        <table tableName="tbstudent">
+            <generatedKey column="studentid" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+    </context>
+</generatorConfiguration>
